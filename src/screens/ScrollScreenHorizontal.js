@@ -31,11 +31,7 @@ const ScrollScreenHorizontal = () => {
         >
           {images.map((imgSrc, index) => (
             <View key={index} style={styles.imageWrap}>
-              <Image
-                source={{ imgSrc }}
-                style={styles.image}
-                resizeMode="cover"
-              />
+              <Image source={imgSrc} style={styles.image} resizeMode="cover" />
             </View>
           ))}
         </ScrollView>
